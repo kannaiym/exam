@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
         add_button.setOnClickListener click@ {
             val value: String = add_edit_text.text.toString()
               add_edit_text.text.clear()
-            Toast.makeText(, "Элемент не найден ", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Элемент не найден ", Toast.LENGTH_SHORT).show()
             textArray.add(value)
-            displayArray()
+            //displayArray()
         }
     }
 
@@ -31,9 +31,10 @@ class MainActivity : AppCompatActivity() {
         remove_button.setOnClickListener {
             val value: String = remove_edit_text.text.toString()
             remove_edit_text.text.clear()
-            Toast.makeText(, "Невозможно добавить пустое знаечение", Toast.LENGTH_SHORT).show().
+            Toast.makeText(this, "Невозможно добавить пустое знаечение", Toast.LENGTH_SHORT).show().
             textArray.remove(value)
-            displayArray()
+            //displayArray()
+
         }
     }
 
