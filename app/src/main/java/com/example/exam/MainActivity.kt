@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         remove_button.setOnClickListener {
             val value: String = remove_edit_text.text.toString()
             remove_edit_text.text.clear()
-            Toast.makeText(this, "Невозможно добавить пустое знаечение", Toast.LENGTH_SHORT).show().
+            Toast.makeText(this, "Невозможно добавить пустое знаечение", Toast.LENGTH_SHORT).show()
             textArray.remove(value)
             //displayArray()
 
